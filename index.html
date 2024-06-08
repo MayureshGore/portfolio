@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayuresh Hanumant Gore's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(56, 3, 247, 0.8);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #070707;
+        }
+
+        .section {
+            background: rgba(6, 242, 250, 0.8);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.show {
+            display: block;
+        }
+
+        h2 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mayuresh Hanumant Gore</h1>
+        <nav>
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="section" id="about-me">
+        <h2 onclick="toggleSection('about-me-content')">About Me</h2>
+        <div class="content show" id="about-me-content">
+            <p>Postgraduate in Statistics with about 1 year of experience in a Data Science internship at ExcelR Solutions. Proficient in statistical analysis, data modelling, and visualization. Demonstrated ability to derive actionable insights from complex datasets and drive informed decisions. Eager to apply analytical skills to real-world challenges and contribute to the success of forward-thinking organizations.</p>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <h2 onclick="toggleSection('contact-content')">Contact</h2>
+        <div class="content show" id="contact-content">
+            <p><strong>Mo.NO.:</strong> +919765686088 / +919730079740</p>
+            <p><strong>Mail ID:</strong> mayureshgore7@gmail.com</p>
+            <p><strong>Address:</strong> A/p. Phondshiras, Tal. Malshiras, Dist. Solapur, Pin-code -413109.</p>
+            <p><strong>LinkedIn:</strong> <a href="https://in.linkedin.com/in/mayuresh-gore-5696b821b" target="_blank">https://in.linkedin.com/in/mayuresh-gore-5696b821b</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/MayureshGore" target="_blank">https://github.com/MayureshGore</a></p>
+        </div>
+    </div>
+
+    <div class="section" id="resume">
+        <h2 onclick="toggleSection('resume-content')">Resume</h2>
+        <div class="content" id="resume-content">
+            <p>You can download my resume/CV from <a href="Mayuresh_Resume_D_S.pdf" download>this link</a>.</p>
+        </div>
+    </div>
+
+    <div class="section" id="projects">
+        <h2 onclick="toggleSection('projects-content')">Projects</h2>
+        <div class="content" id="projects-content">
+            <h3>Resume Classification</h3>
+            <p><strong>Objective:</strong> Develop an automated system to classify resumes into predefined categories based on skills, qualifications, and experiences to streamline the recruitment process.</p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>Programming Languages: Python</li>
+                <li>Libraries: Scikit-learn, Pandas, Numpy</li>
+                <li>Data Visualization: Matplotlib, Seaborn</li>
+                <li>Text Processing: NLTK (Natural Language Toolkit), SpaCy</li>
+                <li>Model Deployment: Flask</li>
+            </ul>
+            <p><strong>Business Need:</strong> Automate resume sorting to quickly identify suitable candidates, reducing manual review time and improving recruitment efficiency.</p>
+            <p><strong>Solution Using Data Science Techniques:</strong> Data Collection, Data Preprocessing, Model Building, Model Selection, Deployment.</p>
+            <p><strong>Conclusion:</strong> The automated system improved recruitment efficiency by accurately categorizing resumes, reducing manual workload, and leading to faster hiring times and enhanced HR productivity.</p>
+
+            <h3>Customer Personality Analysis</h3>
+            <p><strong>Objective:</strong> Analyze customer personalities to enhance personalized marketing strategies and customer satisfaction.</p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>Programming Languages: Python</li>
+                <li>Libraries: Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn</li>
+                <li>Clustering: K-means, Hierarchical Clustering</li>
+                <li>Model Deployment: Flask</li>
+            </ul>
+            <p><strong>Business Need:</strong> Tailor marketing strategies to individual customer preferences to boost engagement, retention, and sales.</p>
+            <p><strong>Solution Using Data Science Techniques:</strong> Data collection, preprocessing, clustering, profiling, and deployment.</p>
+            <p><strong>Conclusion:</strong> Provided actionable customer insights, enabling personalized marketing, which improved engagement, retention, and sales.</p>
+
+            <h3>Statistical Analysis of Employee Attrition and Retention</h3>
+            <p><strong>Objective:</strong> To analyze factors influencing employee attrition and retention to help the organization reduce turnover and retain top talent.</p>
+            <p><strong>Tools Used:</strong></p>
+            <ul>
+                <li>Programming Languages: Python</li>
+                <li>Libraries: Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn, Statistical models.</li>
+            </ul>
+            <p><strong>Business Need:</strong> Understanding the reasons behind employee attrition to implement effective retention strategies and reduce turnover costs.</p>
+            <p><strong>Conclusion:</strong> The statistical analysis identified key factors influencing employee attrition, enabling targeted retention strategies that reduced turnover and improved organizational performance.</p>
+        </div>
+    </div>
+
+    <div class="section" id="education">
+        <h2 onclick="toggleSection('education-content')">Education</h2>
+        <div class="content" id="education-content">
+            <p><strong>Post Graduate:</strong><br> Master of Science (Statistics), 2021 - 2023<br> DR. BABASAHEB AMBEDKAR MARATHWADA UNIVERSITY.</p>
+            <p><strong>Graduate:</strong><br> Bachelor of Science (Statistics), 2018 - 2021<br> TULJARAM CHATURCHAND COLLEGE, BARAMATI. (SAVITRIBAI PHULE PUNE UNIVERSITY)</p>
+        </div>
+    </div>
+
+    <div class="section" id="certifications">
+        <h2 onclick="toggleSection('certifications-content')">Certifications</h2>
+        <div class="content" id="certifications-content">
+            <p>You can view my certifications using the following links:</p>
+            <ul>
+                <li><a href="Data_Science_certificate.pdf" download>Certification 1</a></li>
+                <li><a href="project_completion_certificate_1.pdf" download>Certification 2</a></li>
+                <li><a href="project_complition_certificate_2.pdf" download>Certification 3</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleSection(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
